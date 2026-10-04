@@ -1,14 +1,12 @@
+import 'package:guitar_tuner_and_practise_app/core/extension/main_extension.dart';
 import 'package:guitar_tuner_and_practise_app/core/routing/routes/main/main_routes.dart';
 import 'package:guitar_tuner_and_practise_app/core/routing/custom_transition.dart';
 import 'package:guitar_tuner_and_practise_app/core/routing/main_shell.dart';
 
 import 'package:go_router/go_router.dart';
-import 'package:guitar_tuner_and_practise_app/features/my_library/view/my_library_view.dart';
-import 'package:guitar_tuner_and_practise_app/features/profile/view/profile_view.dart';
-import 'package:guitar_tuner_and_practise_app/features/progress/view/progress_view.dart';
 
 // Page Imports
-
+import 'package:guitar_tuner_and_practise_app/features/under_construction/view/under_construction_view.dart';
 import 'package:guitar_tuner_and_practise_app/features/splash/view/splash_view.dart';
 import 'package:guitar_tuner_and_practise_app/features/home/view/home_view.dart';
 
@@ -43,7 +41,8 @@ class MainRouter {
           pageBuilder: (context, state) {
             return RouterTransitionHelper.build(
               state: state,
-              child: const MyLibraryView(),
+              // child: const MyLibraryView(),
+              child: UnderConstructionView(title: context.l10n.library),
               type: PageTransitionType.fade,
               useCupertinoOnIOS: false,
             );
@@ -54,7 +53,8 @@ class MainRouter {
           pageBuilder: (context, state) {
             return RouterTransitionHelper.build(
               state: state,
-              child: const ProgressView(),
+              // child: const ProgressView(),
+              child: UnderConstructionView(title: context.l10n.progress),
               type: PageTransitionType.fade,
               useCupertinoOnIOS: false,
             );
@@ -65,7 +65,8 @@ class MainRouter {
           pageBuilder: (context, state) {
             return RouterTransitionHelper.build(
               state: state,
-              child: const ProfileView(),
+              // child: const ProfileView(),
+              child: UnderConstructionView(title: context.l10n.profile),
               type: PageTransitionType.fade,
               useCupertinoOnIOS: false,
             );

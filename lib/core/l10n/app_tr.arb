@@ -34,5 +34,10 @@
   "monthsAgo": "{month} ay önce",
   "yearAgo": "{year} yıl önce",
   "yearsAgo": "{year} yıl önce",
-  "accuracy": "doğruluk"
+  "accuracy": "doğruluk",
+  "noNotes": "Burada nota yok",
+  "pageNotFound": "Aradığın ekran taşınmış ya da hiç var olmamış. Adres doğruysa bize bildir.",
+  "backToToday": "Bugün'e dön",
+  "backToPrevious": "Önceki ekrana dön",
+  "disabledInThisVersion": "Bu sürümde kapalı"
 }

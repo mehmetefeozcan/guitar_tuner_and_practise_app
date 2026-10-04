@@ -133,4 +133,20 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get accuracy => 'accuracy';
+
+  @override
+  String get noNotes => 'No notes here';
+
+  @override
+  String get pageNotFound =>
+      'The page you\'re looking for has been moved or never existed. If the URL is correct, let us know.';
+
+  @override
+  String get backToToday => 'Back to Today';
+
+  @override
+  String get backToPrevious => 'Go back';
+
+  @override
+  String get disabledInThisVersion => 'Disabled in this version';
 }

@@ -133,4 +133,20 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get accuracy => 'doğruluk';
+
+  @override
+  String get noNotes => 'Burada nota yok';
+
+  @override
+  String get pageNotFound =>
+      'Aradığın ekran taşınmış ya da hiç var olmamış. Adres doğruysa bize bildir.';
+
+  @override
+  String get backToToday => 'Bugün\'e dön';
+
+  @override
+  String get backToPrevious => 'Önceki ekrana dön';
+
+  @override
+  String get disabledInThisVersion => 'Bu sürümde kapalı';
 }

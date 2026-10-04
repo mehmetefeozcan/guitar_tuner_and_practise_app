@@ -1,0 +1,21 @@
+<svg width="226" height="72" viewBox="0 0 226 72" role="img" aria-label="İlk ölçüsü yazılmış, kalanı boş porte">
+        <g stroke="#8c7c66" stroke-width="1">
+          <line x1="0" y1="22" x2="226" y2="22"></line>
+          <line x1="0" y1="31" x2="226" y2="31"></line>
+          <line x1="0" y1="40" x2="226" y2="40"></line>
+          <line x1="0" y1="49" x2="226" y2="49"></line>
+          <line x1="0" y1="58" x2="226" y2="58"></line>
+          <line x1="75" y1="22" x2="75" y2="58" stroke-width="1.5"></line>
+        </g>
+        <g stroke="#8c7c66" stroke-width="1.5" stroke-dasharray="3 4">
+          <line x1="151" y1="22" x2="151" y2="58"></line>
+          <line x1="225" y1="22" x2="225" y2="58"></line>
+        </g>
+        <g fill="#1b1610">
+          <ellipse cx="22" cy="49" rx="5" ry="3.8"></ellipse><rect x="26" y="27" width="1.4" height="22"></rect>
+          <ellipse cx="48" cy="40" rx="5" ry="3.8"></ellipse><rect x="52" y="18" width="1.4" height="22"></rect>
+        </g>
+        <g fill="#6b5c46" font-family="'IBM Plex Mono', monospace" font-size="10">
+          <text x="107" y="70">2</text><text x="183" y="70">3</text>
+        </g>
+      </svg>

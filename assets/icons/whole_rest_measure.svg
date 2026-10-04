@@ -1,0 +1,13 @@
+<svg width="226" height="72" viewBox="0 0 226 72" role="img" aria-label="Boş porte, ortasında tam es">
+        <g stroke="#8c7c66" stroke-width="1">
+          <line x1="0" y1="22" x2="226" y2="22"></line>
+          <line x1="0" y1="31" x2="226" y2="31"></line>
+          <line x1="0" y1="40" x2="226" y2="40"></line>
+          <line x1="0" y1="49" x2="226" y2="49"></line>
+          <line x1="0" y1="58" x2="226" y2="58"></line>
+          <line x1="75" y1="22" x2="75" y2="58" stroke-width="1.5"></line>
+          <line x1="151" y1="22" x2="151" y2="58" stroke-width="1.5"></line>
+          <line x1="225" y1="22" x2="225" y2="58" stroke-width="1.5"></line>
+        </g>
+        <rect x="104" y="31" width="20" height="9" fill="#1b1610"></rect>
+      </svg>

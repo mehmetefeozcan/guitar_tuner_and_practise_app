@@ -307,6 +307,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'accuracy'**
   String get accuracy;
+
+  /// No description provided for @noNotes.
+  ///
+  /// In en, this message translates to:
+  /// **'No notes here'**
+  String get noNotes;
+
+  /// No description provided for @pageNotFound.
+  ///
+  /// In en, this message translates to:
+  /// **'The page you\'re looking for has been moved or never existed. If the URL is correct, let us know.'**
+  String get pageNotFound;
+
+  /// No description provided for @backToToday.
+  ///
+  /// In en, this message translates to:
+  /// **'Back to Today'**
+  String get backToToday;
+
+  /// No description provided for @backToPrevious.
+  ///
+  /// In en, this message translates to:
+  /// **'Go back'**
+  String get backToPrevious;
+
+  /// No description provided for @disabledInThisVersion.
+  ///
+  /// In en, this message translates to:
+  /// **'Disabled in this version'**
+  String get disabledInThisVersion;
 }
 
 class _AppLocalizationsDelegate

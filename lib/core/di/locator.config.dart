@@ -17,9 +17,12 @@ import 'package:injectable/injectable.dart' as _i526;
 
 import '../../features/home/store/home_store.dart' as _i842;
 import '../../features/my_library/store/my_library_store.dart' as _i374;
+import '../../features/not_found/store/not_found_store.dart' as _i806;
 import '../../features/profile/store/profile_store.dart' as _i8;
 import '../../features/progress/store/progress_store.dart' as _i807;
 import '../../features/splash/store/splash_store.dart' as _i144;
+import '../../features/under_construction/store/under_construction_store.dart'
+    as _i838;
 import '../network/custom_dio_service.dart' as _i587;
 import '../network/dio_module.dart' as _i614;
 import '../state/language_store.dart' as _i1072;
@@ -43,9 +46,13 @@ extension GetItInjectableX on _i174.GetIt {
     );
     gh.factory<_i842.HomeStore>(() => _i842.HomeStore());
     gh.factory<_i374.MyLibraryStore>(() => _i374.MyLibraryStore());
+    gh.factory<_i806.NotFoundStore>(() => _i806.NotFoundStore());
     gh.factory<_i8.ProfileStore>(() => _i8.ProfileStore());
     gh.factory<_i807.ProgressStore>(() => _i807.ProgressStore());
     gh.factory<_i144.SplashStore>(() => _i144.SplashStore());
+    gh.factory<_i838.UnderConstructionStore>(
+      () => _i838.UnderConstructionStore(),
+    );
     gh.singleton<_i1025.AppTheme>(() => _i1025.AppTheme());
     await gh.lazySingletonAsync<_i361.Dio>(
       () => dioModule.dio(),

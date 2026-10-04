@@ -16,4 +16,6 @@ class IconAssets {
   String get scan => _svg('scan');
   String get settings => _svg('settings');
   String get tuner => _svg('tuner');
+  String get wholeRestMeasure => _svg('whole_rest_measure');
+  String get wipMusicStaff => _svg('wip_music_staff');
 }

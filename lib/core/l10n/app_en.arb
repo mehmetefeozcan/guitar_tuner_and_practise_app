@@ -34,5 +34,10 @@
   "monthsAgo": "{month} months ago",
   "yearAgo": "{year} year ago",
   "yearsAgo": "{year} years ago",
-  "accuracy": "accuracy"
+  "accuracy": "accuracy",
+  "noNotes": "No notes here",
+  "pageNotFound": "The page you're looking for has been moved or never existed. If the URL is correct, let us know.",
+  "backToToday": "Back to Today",
+  "backToPrevious": "Go back",
+  "disabledInThisVersion": "Disabled in this version"
 }
