@@ -34,7 +34,6 @@ class QuickTuningTypeSelectWidget extends StatelessWidget {
         vertical: context.space2,
         horizontal: context.space6,
       ),
-
       decoration: BoxDecoration(
         color: index == selected
             ? AppColors.darkAccent

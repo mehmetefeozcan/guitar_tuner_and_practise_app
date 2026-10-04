@@ -165,4 +165,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get done => 'Done';
+
+  @override
+  String get strings => 'Strings';
+
+  @override
+  String get flat => 'Flat';
+
+  @override
+  String get sharp => 'Sharp';
 }

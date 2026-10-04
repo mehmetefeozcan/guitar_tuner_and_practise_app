@@ -367,6 +367,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Done'**
   String get done;
+
+  /// No description provided for @strings.
+  ///
+  /// In en, this message translates to:
+  /// **'Strings'**
+  String get strings;
+
+  /// No description provided for @flat.
+  ///
+  /// In en, this message translates to:
+  /// **'Flat'**
+  String get flat;
+
+  /// No description provided for @sharp.
+  ///
+  /// In en, this message translates to:
+  /// **'Sharp'**
+  String get sharp;
 }
 
 class _AppLocalizationsDelegate

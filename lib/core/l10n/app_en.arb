@@ -44,5 +44,8 @@
   "defaultValue": "Default",
   "frequentlyUsed": "Frequently Used",
   "frequentlyUsedDesc": "The measured frequency remains constant; what changes is the target's location. When you select a value other than 440, the tuning screen displays it at the top.",
-  "done": "Done"
+  "done": "Done",
+  "strings": "Strings",
+  "flat": "Flat",
+  "sharp": "Sharp"
 }

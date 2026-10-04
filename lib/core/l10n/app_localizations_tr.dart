@@ -165,4 +165,13 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get done => 'Bitti';
+
+  @override
+  String get strings => 'Teller';
+
+  @override
+  String get flat => 'Pes';
+
+  @override
+  String get sharp => 'Tiz';
 }
