@@ -128,12 +128,6 @@ abstract class AppLocalizations {
   /// **'This Week'**
   String get thisWeek;
 
-  /// No description provided for @today.
-  ///
-  /// In en, this message translates to:
-  /// **'Today'**
-  String get today;
-
   /// No description provided for @welcome.
   ///
   /// In en, this message translates to:
@@ -205,6 +199,114 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Note Scan'**
   String get noteScan;
+
+  /// No description provided for @homework.
+  ///
+  /// In en, this message translates to:
+  /// **'Homework'**
+  String get homework;
+
+  /// No description provided for @all.
+  ///
+  /// In en, this message translates to:
+  /// **'All'**
+  String get all;
+
+  /// No description provided for @bars.
+  ///
+  /// In en, this message translates to:
+  /// **'Bars'**
+  String get bars;
+
+  /// No description provided for @targetBPM.
+  ///
+  /// In en, this message translates to:
+  /// **'target {BPM} BPM'**
+  String targetBPM(Object BPM);
+
+  /// No description provided for @working.
+  ///
+  /// In en, this message translates to:
+  /// **'Working'**
+  String get working;
+
+  /// No description provided for @delivery.
+  ///
+  /// In en, this message translates to:
+  /// **'Delivery'**
+  String get delivery;
+
+  /// No description provided for @lastPracticed.
+  ///
+  /// In en, this message translates to:
+  /// **'Last practiced'**
+  String get lastPracticed;
+
+  /// No description provided for @today.
+  ///
+  /// In en, this message translates to:
+  /// **'Today'**
+  String get today;
+
+  /// No description provided for @yesterday.
+  ///
+  /// In en, this message translates to:
+  /// **'Yesterday'**
+  String get yesterday;
+
+  /// No description provided for @dayAgo.
+  ///
+  /// In en, this message translates to:
+  /// **'{day} day ago'**
+  String dayAgo(Object day);
+
+  /// No description provided for @daysAgo.
+  ///
+  /// In en, this message translates to:
+  /// **'{day} days ago'**
+  String daysAgo(Object day);
+
+  /// No description provided for @weekAgo.
+  ///
+  /// In en, this message translates to:
+  /// **'{week} week ago'**
+  String weekAgo(Object week);
+
+  /// No description provided for @weeksAgo.
+  ///
+  /// In en, this message translates to:
+  /// **'{week} weeks ago'**
+  String weeksAgo(Object week);
+
+  /// No description provided for @monthAgo.
+  ///
+  /// In en, this message translates to:
+  /// **'{month} month ago'**
+  String monthAgo(Object month);
+
+  /// No description provided for @monthsAgo.
+  ///
+  /// In en, this message translates to:
+  /// **'{month} months ago'**
+  String monthsAgo(Object month);
+
+  /// No description provided for @yearAgo.
+  ///
+  /// In en, this message translates to:
+  /// **'{year} year ago'**
+  String yearAgo(Object year);
+
+  /// No description provided for @yearsAgo.
+  ///
+  /// In en, this message translates to:
+  /// **'{year} years ago'**
+  String yearsAgo(Object year);
+
+  /// No description provided for @accuracy.
+  ///
+  /// In en, this message translates to:
+  /// **'accuracy'**
+  String get accuracy;
 }
 
 class _AppLocalizationsDelegate

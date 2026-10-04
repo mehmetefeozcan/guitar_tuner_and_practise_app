@@ -27,9 +27,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get thisWeek => 'This Week';
 
   @override
-  String get today => 'Today';
-
-  @override
   String get welcome => 'Welcome';
 
   @override
@@ -64,4 +61,76 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get noteScan => 'Note Scan';
+
+  @override
+  String get homework => 'Homework';
+
+  @override
+  String get all => 'All';
+
+  @override
+  String get bars => 'Bars';
+
+  @override
+  String targetBPM(Object BPM) {
+    return 'target $BPM BPM';
+  }
+
+  @override
+  String get working => 'Working';
+
+  @override
+  String get delivery => 'Delivery';
+
+  @override
+  String get lastPracticed => 'Last practiced';
+
+  @override
+  String get today => 'Today';
+
+  @override
+  String get yesterday => 'Yesterday';
+
+  @override
+  String dayAgo(Object day) {
+    return '$day day ago';
+  }
+
+  @override
+  String daysAgo(Object day) {
+    return '$day days ago';
+  }
+
+  @override
+  String weekAgo(Object week) {
+    return '$week week ago';
+  }
+
+  @override
+  String weeksAgo(Object week) {
+    return '$week weeks ago';
+  }
+
+  @override
+  String monthAgo(Object month) {
+    return '$month month ago';
+  }
+
+  @override
+  String monthsAgo(Object month) {
+    return '$month months ago';
+  }
+
+  @override
+  String yearAgo(Object year) {
+    return '$year year ago';
+  }
+
+  @override
+  String yearsAgo(Object year) {
+    return '$year years ago';
+  }
+
+  @override
+  String get accuracy => 'accuracy';
 }

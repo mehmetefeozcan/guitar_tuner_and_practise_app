@@ -1,5 +1,7 @@
 // home_view.dart
 
+import 'package:guitar_tuner_and_practise_app/features/home/widgets/home_last_practiced_widget.dart';
+import 'package:guitar_tuner_and_practise_app/features/home/widgets/home_lesson_widget.dart';
 import 'package:guitar_tuner_and_practise_app/features/home/widgets/home_shortcut_button_widget.dart';
 import 'package:guitar_tuner_and_practise_app/features/home/widgets/home_weekly_progress_widget.dart';
 import 'package:guitar_tuner_and_practise_app/features/home/widgets/home_appbar_widget.dart';
@@ -70,6 +72,19 @@ class _HomeViewState extends State<HomeView> with BaseViewMixin<HomeView> {
                   ),
                 ),
               ],
+            ),
+            HomeLessonWidget(
+              pieceName: "Carcassi Op. 60 No. 3",
+              minBar: 1,
+              maxBar: 16,
+              bpm: 96,
+              lastWorkingBPM: 84,
+              delivery: DateTime(2026, 10, 5),
+            ),
+            HomeLastPracticedWidget(
+              pieceName: "Do majör gam · 2 oktav",
+              lastPracticeDate: DateTime(2026, 10, 1),
+              accuracy: 91,
             ),
           ],
         ),

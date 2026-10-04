@@ -27,9 +27,6 @@ class AppLocalizationsTr extends AppLocalizations {
   String get thisWeek => 'Bu Hafta';
 
   @override
-  String get today => 'Bugün';
-
-  @override
   String get welcome => 'Hoşgeldiniz';
 
   @override
@@ -64,4 +61,76 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get noteScan => 'Nota tara';
+
+  @override
+  String get homework => 'Ödevin';
+
+  @override
+  String get all => 'Tümü';
+
+  @override
+  String get bars => 'Ölçü';
+
+  @override
+  String targetBPM(Object BPM) {
+    return 'hedef $BPM BPM';
+  }
+
+  @override
+  String get working => 'Çalışılıyor';
+
+  @override
+  String get delivery => 'Teslim';
+
+  @override
+  String get lastPracticed => 'Kaldığın yer';
+
+  @override
+  String get today => 'Bugün';
+
+  @override
+  String get yesterday => 'Dün';
+
+  @override
+  String dayAgo(Object day) {
+    return '$day gün önce';
+  }
+
+  @override
+  String daysAgo(Object day) {
+    return '$day gün önce';
+  }
+
+  @override
+  String weekAgo(Object week) {
+    return '$week hafta önce';
+  }
+
+  @override
+  String weeksAgo(Object week) {
+    return '$week hafta önce';
+  }
+
+  @override
+  String monthAgo(Object month) {
+    return '$month ay önce';
+  }
+
+  @override
+  String monthsAgo(Object month) {
+    return '$month ay önce';
+  }
+
+  @override
+  String yearAgo(Object year) {
+    return '$year yıl önce';
+  }
+
+  @override
+  String yearsAgo(Object year) {
+    return '$year yıl önce';
+  }
+
+  @override
+  String get accuracy => 'doğruluk';
 }
