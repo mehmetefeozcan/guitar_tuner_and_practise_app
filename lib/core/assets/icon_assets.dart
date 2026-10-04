@@ -8,8 +8,11 @@ class IconAssets {
   String get book => _svg('book');
   String get calendar => _svg('calendar');
   String get chevron => _svg('chevron');
+  String get close => _svg('close');
   String get metronome => _svg('metronome');
+  String get minus => _svg('minus');
   String get notes => _svg('notes');
+  String get plus => _svg('plus');
   String get porte => _svg('porte');
   String get profile => _svg('profile');
   String get progress => _svg('progress');

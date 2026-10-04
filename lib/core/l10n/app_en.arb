@@ -39,5 +39,10 @@
   "pageNotFound": "The page you're looking for has been moved or never existed. If the URL is correct, let us know.",
   "backToToday": "Back to Today",
   "backToPrevious": "Go back",
-  "disabledInThisVersion": "Disabled in this version"
+  "disabledInThisVersion": "Disabled in this version",
+  "referenceFrequency": "Reference frequency",
+  "defaultValue": "Default",
+  "frequentlyUsed": "Frequently Used",
+  "frequentlyUsedDesc": "The measured frequency remains constant; what changes is the target's location. When you select a value other than 440, the tuning screen displays it at the top.",
+  "done": "Done"
 }

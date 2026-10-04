@@ -149,4 +149,20 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get disabledInThisVersion => 'Disabled in this version';
+
+  @override
+  String get referenceFrequency => 'Reference frequency';
+
+  @override
+  String get defaultValue => 'Default';
+
+  @override
+  String get frequentlyUsed => 'Frequently Used';
+
+  @override
+  String get frequentlyUsedDesc =>
+      'The measured frequency remains constant; what changes is the target\'s location. When you select a value other than 440, the tuning screen displays it at the top.';
+
+  @override
+  String get done => 'Done';
 }

@@ -29,10 +29,7 @@ class SubPageAppbar extends StatelessWidget implements PreferredSizeWidget {
       surfaceTintColor: Colors.transparent,
       title: Text(
         title,
-        style: context.displayMedium!.copyWith(
-          color: AppColors.darkInk,
-          fontWeight: FontWeight.bold,
-        ),
+        style: context.displayMedium!.copyWith(color: AppColors.darkInk),
       ),
       actions: actions,
       leading: GestureDetector(

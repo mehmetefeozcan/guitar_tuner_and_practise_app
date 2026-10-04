@@ -149,4 +149,20 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get disabledInThisVersion => 'Bu sürümde kapalı';
+
+  @override
+  String get referenceFrequency => 'Referans frekansı';
+
+  @override
+  String get defaultValue => 'Varsayılan';
+
+  @override
+  String get frequentlyUsed => 'Sık Kullanılanlar';
+
+  @override
+  String get frequentlyUsedDesc =>
+      'Ölçülen frekans değişmez; değişen şey hedefin nerede olduğu. 440 dışında bir değer seçtiğinde akort ekranı bunu üstte gösterir.';
+
+  @override
+  String get done => 'Bitti';
 }

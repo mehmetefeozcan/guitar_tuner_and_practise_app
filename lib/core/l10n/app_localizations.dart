@@ -337,6 +337,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Disabled in this version'**
   String get disabledInThisVersion;
+
+  /// No description provided for @referenceFrequency.
+  ///
+  /// In en, this message translates to:
+  /// **'Reference frequency'**
+  String get referenceFrequency;
+
+  /// No description provided for @defaultValue.
+  ///
+  /// In en, this message translates to:
+  /// **'Default'**
+  String get defaultValue;
+
+  /// No description provided for @frequentlyUsed.
+  ///
+  /// In en, this message translates to:
+  /// **'Frequently Used'**
+  String get frequentlyUsed;
+
+  /// No description provided for @frequentlyUsedDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'The measured frequency remains constant; what changes is the target\'s location. When you select a value other than 440, the tuning screen displays it at the top.'**
+  String get frequentlyUsedDesc;
+
+  /// No description provided for @done.
+  ///
+  /// In en, this message translates to:
+  /// **'Done'**
+  String get done;
 }
 
 class _AppLocalizationsDelegate
