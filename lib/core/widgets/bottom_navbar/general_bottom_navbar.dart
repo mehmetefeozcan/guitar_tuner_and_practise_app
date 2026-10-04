@@ -28,7 +28,7 @@ class GeneralBottomNavbar extends StatelessWidget {
               bottom: context.isAndroid ? 50.h : 30.h,
             ),
             decoration: BoxDecoration(
-              color: AppColors.white,
+              color: AppColors.darkSurface200,
               borderRadius: BorderRadius.vertical(
                 top: Radius.circular(context.radiusLarge),
               ),
@@ -73,7 +73,9 @@ class GeneralBottomNavbar extends StatelessWidget {
     String title,
     String route,
   ) {
-    final color = currentPath == route ? AppColors.brandNavy : AppColors.grey;
+    final color = currentPath == route
+        ? AppColors.darkAccentText
+        : AppColors.darkInkSubtle;
 
     return GestureDetector(
       behavior: HitTestBehavior.opaque,
