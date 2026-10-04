@@ -24,12 +24,29 @@ abstract class _SplashStore extends BaseStore with Store {
   @observable
   int selectedMessageOrder = 1;
 
+  @observable
+  double progress = 0;
+
   @action
   Future<void> initApp() async {
-    await Future.delayed(Duration(seconds: 1, milliseconds: 250));
-    selectMessage();
-    await Future.delayed(Duration(seconds: 1, milliseconds: 750));
+    final steps = <Future<void> Function()>[_loadLocalData, _fetchRemoteData];
+
+    for (var i = 0; i < steps.length; i++) {
+      await steps[i]();
+      progress = (i + 1) / steps.length * 100;
+    }
+
+    await Future.delayed(const Duration(milliseconds: 400));
     navigateToHome = true;
+  }
+
+  Future<void> _loadLocalData() async {
+    await Future.delayed(const Duration(seconds: 1, milliseconds: 250));
+    selectMessage();
+  }
+
+  Future<void> _fetchRemoteData() async {
+    await Future.delayed(const Duration(seconds: 1, milliseconds: 750));
   }
 
   @action

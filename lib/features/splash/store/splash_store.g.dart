@@ -71,6 +71,24 @@ mixin _$SplashStore on _SplashStore, Store {
     );
   }
 
+  late final _$progressAtom = Atom(
+    name: '_SplashStore.progress',
+    context: context,
+  );
+
+  @override
+  double get progress {
+    _$progressAtom.reportRead();
+    return super.progress;
+  }
+
+  @override
+  set progress(double value) {
+    _$progressAtom.reportWrite(value, super.progress, () {
+      super.progress = value;
+    });
+  }
+
   late final _$initAppAsyncAction = AsyncAction(
     '_SplashStore.initApp',
     context: context,
@@ -103,7 +121,8 @@ mixin _$SplashStore on _SplashStore, Store {
     return '''
 navigateToHome: ${navigateToHome},
 selectableMessageOrders: ${selectableMessageOrders},
-selectedMessageOrder: ${selectedMessageOrder}
+selectedMessageOrder: ${selectedMessageOrder},
+progress: ${progress}
     ''';
   }
 }

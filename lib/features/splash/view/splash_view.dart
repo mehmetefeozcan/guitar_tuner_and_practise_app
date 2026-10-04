@@ -78,14 +78,26 @@ class _SplashViewState extends State<SplashView>
               Spacer(),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 96.w),
-                child: LinearIndicator(progress: 10),
+                child: Observer(
+                  builder: (_) => TweenAnimationBuilder<double>(
+                    tween: Tween(end: _store!.progress),
+                    duration: const Duration(milliseconds: 400),
+                    curve: Curves.easeOut,
+                    builder: (context, value, _) =>
+                        LinearIndicator(progress: value),
+                  ),
+                ),
               ),
               SizedBox(height: context.space4),
               Observer(
-                builder: (context) => Text(
-                  handleMessage(context),
-                  style: context.titleSmall!.copyWith(
-                    color: AppColors.darkInkSubtle,
+                builder: (context) => AnimatedSwitcher(
+                  duration: const Duration(milliseconds: 400),
+                  child: Text(
+                    handleMessage(context),
+                    key: ValueKey(_store!.selectedMessageOrder),
+                    style: context.titleSmall!.copyWith(
+                      color: AppColors.darkInkSubtle,
+                    ),
                   ),
                 ),
               ),
