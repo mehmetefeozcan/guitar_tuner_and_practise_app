@@ -1,18 +1,22 @@
 // splash_view.dart
 
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:guitar_tuner_and_practise_app/core/extension/main_extension.dart';
+import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:guitar_tuner_and_practise_app/core/extension/theme_context_extension.dart';
-import 'package:guitar_tuner_and_practise_app/core/theme/app_colors.dart';
-import 'package:guitar_tuner_and_practise_app/core/widgets/indicator/index.dart';
+import 'package:guitar_tuner_and_practise_app/core/routing/routes/main/main_routes.dart';
 import 'package:guitar_tuner_and_practise_app/features/splash/store/splash_store.dart';
+import 'package:guitar_tuner_and_practise_app/core/extension/main_extension.dart';
+import 'package:guitar_tuner_and_practise_app/core/widgets/indicator/index.dart';
 import 'package:guitar_tuner_and_practise_app/core/assets/app_assets.dart';
+import 'package:guitar_tuner_and_practise_app/core/theme/app_colors.dart';
 import 'package:guitar_tuner_and_practise_app/core/base/base_store.dart';
 import 'package:guitar_tuner_and_practise_app/core/base/base_view.dart';
 import 'package:guitar_tuner_and_practise_app/core/di/locator.dart';
 
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:mobx/mobx.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({super.key});
@@ -32,7 +36,30 @@ class _SplashViewState extends State<SplashView>
   Future<void> onInit() async {
     _store = getIt<SplashStore>();
 
+    addReaction(
+      reaction((_) => _store!.navigateToHome, (bool navigate) {
+        if (navigate) {
+          context.go(MainRoutes.home);
+        }
+      }),
+    );
+
     await _store!.initApp();
+  }
+
+  String handleMessage(BuildContext context) {
+    switch (_store!.selectedMessageOrder) {
+      case 1:
+        return context.l10n.splashMessage1;
+      case 2:
+        return context.l10n.splashMessage2;
+      case 3:
+        return context.l10n.splashMessage3;
+      case 4:
+        return context.l10n.splashMessage4;
+      default:
+        return context.l10n.splashMessage1;
+    }
   }
 
   @override
@@ -54,10 +81,12 @@ class _SplashViewState extends State<SplashView>
                 child: LinearIndicator(progress: 10),
               ),
               SizedBox(height: context.space4),
-              Text(
-                context.l10n.splashMessage1,
-                style: context.titleSmall!.copyWith(
-                  color: AppColors.darkInkSubtle,
+              Observer(
+                builder: (context) => Text(
+                  handleMessage(context),
+                  style: context.titleSmall!.copyWith(
+                    color: AppColors.darkInkSubtle,
+                  ),
                 ),
               ),
             ],
