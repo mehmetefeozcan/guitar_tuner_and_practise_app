@@ -3,5 +3,10 @@
   "library": "Library",
   "progress": "Progress",
   "profile": "Profile",
-  "today": "Today"
+  "today": "Today",
+  "welcome": "Welcome",
+  "splashMessage1": "The library is being prepared",
+  "splashMessage2": "The tuning reference is being set",
+  "splashMessage3": "Your work history is being reviewed",
+  "splashMessage4": "The notes are being transcribed"
 }

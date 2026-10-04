@@ -3,5 +3,10 @@
   "library": "Kütüphane",
   "progress": "İlerleme",
   "profile": "Profil",
-  "today": "Bugün"
+  "today": "Bugün",
+  "welcome": "Hoşgeldiniz",
+  "splashMessage1": "Kütüphane hazırlanıyor",
+  "splashMessage2": "Akort referansı ayarlanıyor",
+  "splashMessage3": "Çalışma geçmişin okunuyor",
+  "splashMessage4": "Notalar çözümleniyor"
 }

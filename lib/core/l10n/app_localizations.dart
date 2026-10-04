@@ -121,6 +121,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Today'**
   String get today;
+
+  /// No description provided for @welcome.
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome'**
+  String get welcome;
+
+  /// No description provided for @splashMessage1.
+  ///
+  /// In en, this message translates to:
+  /// **'The library is being prepared'**
+  String get splashMessage1;
+
+  /// No description provided for @splashMessage2.
+  ///
+  /// In en, this message translates to:
+  /// **'The tuning reference is being set'**
+  String get splashMessage2;
+
+  /// No description provided for @splashMessage3.
+  ///
+  /// In en, this message translates to:
+  /// **'Your work history is being reviewed'**
+  String get splashMessage3;
+
+  /// No description provided for @splashMessage4.
+  ///
+  /// In en, this message translates to:
+  /// **'The notes are being transcribed'**
+  String get splashMessage4;
 }
 
 class _AppLocalizationsDelegate

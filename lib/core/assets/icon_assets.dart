@@ -7,6 +7,7 @@ class IconAssets {
 
   String get book => _svg('book');
   String get calendar => _svg('calendar');
+  String get porte => _svg('porte');
   String get profile => _svg('profile');
   String get progress => _svg('progress');
 }

@@ -20,4 +20,19 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get today => 'Today';
+
+  @override
+  String get welcome => 'Welcome';
+
+  @override
+  String get splashMessage1 => 'The library is being prepared';
+
+  @override
+  String get splashMessage2 => 'The tuning reference is being set';
+
+  @override
+  String get splashMessage3 => 'Your work history is being reviewed';
+
+  @override
+  String get splashMessage4 => 'The notes are being transcribed';
 }

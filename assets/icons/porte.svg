@@ -1,0 +1,10 @@
+<svg width="240" height="72" viewBox="0 0 240 72" aria-hidden="true">
+      <rect x="0" y="0" width="240" height="72" rx="18" fill="#d9a441"></rect>
+      <g stroke="#16120e" stroke-width="1.5">
+        <line x1="0" y1="12" x2="240" y2="12"></line>
+        <line x1="0" y1="24" x2="240" y2="24"></line>
+        <line x1="0" y1="36" x2="240" y2="36"></line>
+        <line x1="0" y1="48" x2="240" y2="48"></line>
+        <line x1="0" y1="60" x2="240" y2="60"></line>
+      </g>
+    </svg>
