@@ -1,12 +1,21 @@
 {
   "@@locale": "tr",
+  "goalPractiseHour": "hedef {hour} sa",
   "library": "Kütüphane",
   "progress": "İlerleme",
   "profile": "Profil",
+  "thisWeek": "Bu Hafta",
   "today": "Bugün",
   "welcome": "Hoşgeldiniz",
   "splashMessage1": "Kütüphane hazırlanıyor",
   "splashMessage2": "Akort referansı ayarlanıyor",
   "splashMessage3": "Çalışma geçmişin okunuyor",
-  "splashMessage4": "Notalar çözümleniyor"
+  "splashMessage4": "Notalar çözümleniyor",
+  "min": "dk",
+  "h": "sa",
+  "comparedToLastWeek": "Geçen haftaya göre",
+  "theClockWithMetronome": "saati metronomla",
+  "tuning": "Akort",
+  "metronome": "Metronom",
+  "noteScan": "Nota tara"
 }

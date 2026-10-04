@@ -18,6 +18,7 @@ class LinearIndicator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return LinearProgressIndicator(
+      borderRadius: BorderRadius.circular(100),
       color: passiveColor,
       valueColor: AlwaysStoppedAnimation(activeColor),
       value: progress / 100,

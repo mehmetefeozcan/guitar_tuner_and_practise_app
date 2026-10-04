@@ -10,6 +10,11 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
+  String goalPractiseHour(Object hour) {
+    return 'goal $hour h';
+  }
+
+  @override
   String get library => 'Library';
 
   @override
@@ -17,6 +22,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get profile => 'Profile';
+
+  @override
+  String get thisWeek => 'This Week';
 
   @override
   String get today => 'Today';
@@ -35,4 +43,25 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get splashMessage4 => 'The notes are being transcribed';
+
+  @override
+  String get min => 'min';
+
+  @override
+  String get h => 'h';
+
+  @override
+  String get comparedToLastWeek => 'Compared to last week';
+
+  @override
+  String get theClockWithMetronome => 'the clock with a metronome';
+
+  @override
+  String get tuning => 'Tuning';
+
+  @override
+  String get metronome => 'Metronome';
+
+  @override
+  String get noteScan => 'Note Scan';
 }

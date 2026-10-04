@@ -12,7 +12,7 @@ final RouteObserver<ModalRoute<void>> routeObserver =
 class AppRouter {
   static final GoRouter router = GoRouter(
     navigatorKey: AppConstants.navigatorKey,
-    initialLocation: MainRoutes.splash,
+    initialLocation: MainRoutes.home,
     debugLogDiagnostics: kDebugMode,
     observers: [routeObserver],
     routes: [...MainRouter.routes],

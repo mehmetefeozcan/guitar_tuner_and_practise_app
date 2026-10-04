@@ -6,4 +6,7 @@ class MainRoutes {
   static const library = '/library';
   static const profile = '/profile';
   static const progress = '/progress';
+  static const tuning = '/tuning';
+  static const metronome = '/metronome';
+  static const noteScan = '/note-scan';
 }

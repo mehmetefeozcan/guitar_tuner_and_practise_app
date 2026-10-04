@@ -1,12 +1,21 @@
 {
   "@@locale": "en",
+  "goalPractiseHour": "goal {hour} h",
   "library": "Library",
   "progress": "Progress",
   "profile": "Profile",
+  "thisWeek": "This Week",
   "today": "Today",
   "welcome": "Welcome",
   "splashMessage1": "The library is being prepared",
   "splashMessage2": "The tuning reference is being set",
   "splashMessage3": "Your work history is being reviewed",
-  "splashMessage4": "The notes are being transcribed"
+  "splashMessage4": "The notes are being transcribed",
+  "min": "min",
+  "h": "h",
+  "comparedToLastWeek": "Compared to last week",
+  "theClockWithMetronome": "the clock with a metronome",
+  "tuning": "Tuning",
+  "metronome": "Metronome",
+  "noteScan": "Note Scan"
 }

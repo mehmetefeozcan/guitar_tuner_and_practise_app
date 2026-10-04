@@ -10,6 +10,11 @@ class AppLocalizationsTr extends AppLocalizations {
   AppLocalizationsTr([String locale = 'tr']) : super(locale);
 
   @override
+  String goalPractiseHour(Object hour) {
+    return 'hedef $hour sa';
+  }
+
+  @override
   String get library => 'Kütüphane';
 
   @override
@@ -17,6 +22,9 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get profile => 'Profil';
+
+  @override
+  String get thisWeek => 'Bu Hafta';
 
   @override
   String get today => 'Bugün';
@@ -35,4 +43,25 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get splashMessage4 => 'Notalar çözümleniyor';
+
+  @override
+  String get min => 'dk';
+
+  @override
+  String get h => 'sa';
+
+  @override
+  String get comparedToLastWeek => 'Geçen haftaya göre';
+
+  @override
+  String get theClockWithMetronome => 'saati metronomla';
+
+  @override
+  String get tuning => 'Akort';
+
+  @override
+  String get metronome => 'Metronom';
+
+  @override
+  String get noteScan => 'Nota tara';
 }

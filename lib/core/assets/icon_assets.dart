@@ -7,7 +7,11 @@ class IconAssets {
 
   String get book => _svg('book');
   String get calendar => _svg('calendar');
+  String get metronome => _svg('metronome');
   String get porte => _svg('porte');
   String get profile => _svg('profile');
   String get progress => _svg('progress');
+  String get scan => _svg('scan');
+  String get settings => _svg('settings');
+  String get tuner => _svg('tuner');
 }

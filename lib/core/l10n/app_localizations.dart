@@ -98,6 +98,12 @@ abstract class AppLocalizations {
     Locale('tr'),
   ];
 
+  /// No description provided for @goalPractiseHour.
+  ///
+  /// In en, this message translates to:
+  /// **'goal {hour} h'**
+  String goalPractiseHour(Object hour);
+
   /// No description provided for @library.
   ///
   /// In en, this message translates to:
@@ -115,6 +121,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Profile'**
   String get profile;
+
+  /// No description provided for @thisWeek.
+  ///
+  /// In en, this message translates to:
+  /// **'This Week'**
+  String get thisWeek;
 
   /// No description provided for @today.
   ///
@@ -151,6 +163,48 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'The notes are being transcribed'**
   String get splashMessage4;
+
+  /// No description provided for @min.
+  ///
+  /// In en, this message translates to:
+  /// **'min'**
+  String get min;
+
+  /// No description provided for @h.
+  ///
+  /// In en, this message translates to:
+  /// **'h'**
+  String get h;
+
+  /// No description provided for @comparedToLastWeek.
+  ///
+  /// In en, this message translates to:
+  /// **'Compared to last week'**
+  String get comparedToLastWeek;
+
+  /// No description provided for @theClockWithMetronome.
+  ///
+  /// In en, this message translates to:
+  /// **'the clock with a metronome'**
+  String get theClockWithMetronome;
+
+  /// No description provided for @tuning.
+  ///
+  /// In en, this message translates to:
+  /// **'Tuning'**
+  String get tuning;
+
+  /// No description provided for @metronome.
+  ///
+  /// In en, this message translates to:
+  /// **'Metronome'**
+  String get metronome;
+
+  /// No description provided for @noteScan.
+  ///
+  /// In en, this message translates to:
+  /// **'Note Scan'**
+  String get noteScan;
 }
 
 class _AppLocalizationsDelegate

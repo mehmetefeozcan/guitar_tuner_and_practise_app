@@ -1,6 +1,13 @@
 // home_view.dart
 
+import 'package:guitar_tuner_and_practise_app/features/home/widgets/home_shortcut_button_widget.dart';
+import 'package:guitar_tuner_and_practise_app/features/home/widgets/home_weekly_progress_widget.dart';
+import 'package:guitar_tuner_and_practise_app/features/home/widgets/home_appbar_widget.dart';
+import 'package:guitar_tuner_and_practise_app/core/extension/theme_context_extension.dart';
+import 'package:guitar_tuner_and_practise_app/core/routing/routes/main/main_routes.dart';
 import 'package:guitar_tuner_and_practise_app/features/home/store/home_store.dart';
+import 'package:guitar_tuner_and_practise_app/core/extension/main_extension.dart';
+import 'package:guitar_tuner_and_practise_app/core/assets/app_assets.dart';
 import 'package:guitar_tuner_and_practise_app/core/base/base_store.dart';
 import 'package:guitar_tuner_and_practise_app/core/base/base_view.dart';
 import 'package:guitar_tuner_and_practise_app/core/di/locator.dart';
@@ -29,6 +36,44 @@ class _HomeViewState extends State<HomeView> with BaseViewMixin<HomeView> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(
+        minimum: context.screenPadding,
+        child: Column(
+          spacing: context.space5,
+          children: [
+            const HomeAppbarWidget(),
+            HomeWeeklyProgressWidget(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              spacing: context.space3,
+              children: [
+                HomeShortcutButtonWidget(
+                  params: ShortCutParams(
+                    path: MainRoutes.tuning,
+                    icon: AppAssets.icons.tuner,
+                    text: context.l10n.tuning,
+                  ),
+                ),
+                HomeShortcutButtonWidget(
+                  params: ShortCutParams(
+                    path: MainRoutes.metronome,
+                    icon: AppAssets.icons.metronome,
+                    text: context.l10n.metronome,
+                  ),
+                ),
+                HomeShortcutButtonWidget(
+                  params: ShortCutParams(
+                    path: MainRoutes.noteScan,
+                    icon: AppAssets.icons.scan,
+                    text: context.l10n.noteScan,
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }

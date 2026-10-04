@@ -27,13 +27,9 @@ class GeneralBottomNavbar extends StatelessWidget {
               top: 10.h,
               bottom: context.isAndroid ? 50.h : 30.h,
             ),
-            decoration: BoxDecoration(
-              color: AppColors.darkSurface200,
-              borderRadius: BorderRadius.vertical(
-                top: Radius.circular(context.radiusLarge),
-              ),
-            ),
+            decoration: BoxDecoration(color: AppColors.darkSurface200),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 buildNavItem(
                   context,
