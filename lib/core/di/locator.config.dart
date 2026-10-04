@@ -21,6 +21,7 @@ import '../../features/not_found/store/not_found_store.dart' as _i806;
 import '../../features/profile/store/profile_store.dart' as _i8;
 import '../../features/progress/store/progress_store.dart' as _i807;
 import '../../features/splash/store/splash_store.dart' as _i144;
+import '../../features/tuning/store/tuning_store.dart' as _i1057;
 import '../../features/under_construction/store/under_construction_store.dart'
     as _i838;
 import '../network/custom_dio_service.dart' as _i587;
@@ -50,6 +51,7 @@ extension GetItInjectableX on _i174.GetIt {
     gh.factory<_i8.ProfileStore>(() => _i8.ProfileStore());
     gh.factory<_i807.ProgressStore>(() => _i807.ProgressStore());
     gh.factory<_i144.SplashStore>(() => _i144.SplashStore());
+    gh.factory<_i1057.TuningStore>(() => _i1057.TuningStore());
     gh.factory<_i838.UnderConstructionStore>(
       () => _i838.UnderConstructionStore(),
     );

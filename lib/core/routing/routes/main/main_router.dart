@@ -7,6 +7,7 @@ import 'package:go_router/go_router.dart';
 
 // Page Imports
 import 'package:guitar_tuner_and_practise_app/features/under_construction/view/under_construction_view.dart';
+import 'package:guitar_tuner_and_practise_app/features/tuning/view/tuning_view.dart';
 import 'package:guitar_tuner_and_practise_app/features/splash/view/splash_view.dart';
 import 'package:guitar_tuner_and_practise_app/features/home/view/home_view.dart';
 
@@ -73,6 +74,17 @@ class MainRouter {
           },
         ),
       ],
+    ),
+    GoRoute(
+      path: MainRoutes.tuning,
+      pageBuilder: (context, state) {
+        return RouterTransitionHelper.build(
+          state: state,
+          child: const TuningView(),
+          type: PageTransitionType.fade,
+          useCupertinoOnIOS: false,
+        );
+      },
     ),
   ];
 }
