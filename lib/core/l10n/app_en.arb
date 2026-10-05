@@ -56,5 +56,6 @@
   "tuningStandard": "Standard",
   "tuningDropD": "Drop D",
   "tuningHalfStepDown": "Half step down",
-  "tuningHalfStepUp": "Half step up"
+  "tuningHalfStepUp": "Half step up",
+  "tuningChromatic": "Chromatic"
 }

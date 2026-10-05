@@ -68,7 +68,11 @@ class _TuningViewState extends State<TuningView>
             SizedBox(height: 20.w),
             TunerCentsWidget(store: store),
             Spacer(),
-            TuningStringsWidget(store: store),
+            Observer(
+              builder: (context) => store.selectedTuning.isChromatic
+                  ? const SizedBox.shrink()
+                  : TuningStringsWidget(store: store),
+            ),
           ],
         ),
       ),

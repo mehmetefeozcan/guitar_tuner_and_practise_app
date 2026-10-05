@@ -108,8 +108,14 @@ class TunerReadoutWidget extends StatelessWidget {
     final travel = (width - needleWidth) / 2;
     final ratio = ((cents ?? 0) / scaleCents).clamp(-1.0, 1.0);
 
-    return Transform.translate(
-      offset: Offset(ratio * travel, 4.w),
+    // Ölçümler eşit aralıklı gelmez (algılayıcı meşgulse çerçeve atlanır);
+    // ibre her yeni değerde zıplamasın diye konuma yumuşakça gider.
+    return TweenAnimationBuilder<double>(
+      tween: Tween<double>(end: ratio * travel),
+      duration: const Duration(milliseconds: 120),
+      curve: Curves.easeOutCubic,
+      builder: (context, dx, child) =>
+          Transform.translate(offset: Offset(dx, 4.w), child: child),
       child: Container(
         width: needleWidth,
         height: 42.w,

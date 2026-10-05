@@ -1,7 +1,5 @@
 import 'package:guitar_tuner_and_practise_app/features/tuning/model/pitch_reading.dart';
 
-import 'package:injectable/injectable.dart';
-
 import 'dart:async';
 import 'dart:math';
 
@@ -11,8 +9,9 @@ import 'dart:math';
 /// yumuşatma implementasyonda kalır. Gerçek algılayıcı geldiğinde store'a
 /// dokunmadan `@Injectable(as: PitchDetectorService)` değişir.
 abstract class PitchDetectorService {
-  /// Algılanan perdeler. `start` çağrılmadan önce boş akar.
-  Stream<PitchReading> get readings;
+  /// Algılanan perdeler. `start` çağrılmadan önce boş akar. Ses kesildiğinde
+  /// (tel sustu, ortam sessiz) `null` gelir; UI bu durumda "—" gösterir.
+  Stream<PitchReading?> get readings;
 
   /// [referenceHz] A4'ün referans frekansı (440, 432, …).
   Future<void> start({required double referenceHz});
@@ -22,20 +21,22 @@ abstract class PitchDetectorService {
   Future<void> dispose();
 }
 
-/// Mikrofon gelmeden önceki yer tutucu: A2 çevresinde pes/tiz arasında
-/// gidip gelen sahte bir ölçüm akışı üretir.
-@Injectable(as: PitchDetectorService)
+/// Mikrofonsuz ortamlar (simülatör, widget testi) için sahte algılayıcı: A2
+/// çevresinde pes/tiz arasında gidip gelen bir ölçüm akışı üretir.
+///
+/// DI'a kayıtlı değildir; gerekirse `MicrophonePitchDetectorService` yerine
+/// elle bağlanır.
 class MockPitchDetectorService implements PitchDetectorService {
   static const _tick = Duration(milliseconds: 300);
   static const _centsRange = 30.0;
 
-  final _controller = StreamController<PitchReading>.broadcast();
+  final _controller = StreamController<PitchReading?>.broadcast();
 
   Timer? _timer;
   int _step = 0;
 
   @override
-  Stream<PitchReading> get readings => _controller.stream;
+  Stream<PitchReading?> get readings => _controller.stream;
 
   @override
   Future<void> start({required double referenceHz}) async {

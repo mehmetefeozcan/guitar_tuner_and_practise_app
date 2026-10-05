@@ -43,26 +43,48 @@ class TuningStringsWidget extends StatelessWidget {
 
   Widget buildString(BuildContext context, String note, int index) {
     final selected = index == store.selectedStringIndex;
+    final inTune = store.tunedStrings.contains(index);
+    final green = context.ds.signalTrue;
+
+    // Akortta: yeşil zemin. Metin rengi zeminin açıklığına göre seçilir
+    // (koyu temada açık yeşil, açık temada koyu yeşil kullanılıyor).
+    final onGreen = ThemeData.estimateBrightnessForColor(green) == Brightness.dark
+        ? Colors.white
+        : Colors.black;
 
     return GestureDetector(
       onTap: () => store.selectString(index),
-      child: Container(
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 150),
         padding: EdgeInsets.symmetric(
           vertical: context.space3,
           horizontal: context.space2,
         ),
         decoration: BoxDecoration(
-          color: selected
+          color: inTune
+              ? green
+              : selected
               ? context.colors.primary
               : context.colors.surfaceContainer,
           borderRadius: BorderRadius.circular(context.radiusSm),
-          border: Border.all(width: 1, color: context.colors.outlineVariant),
+          // Çalınan (seçili) tel akortlandıysa da ayırt edilsin: yeşil zeminde
+          // birincil renk çerçeve.
+          border: Border.all(
+            width: selected ? 2 : 1,
+            color: selected
+                ? context.colors.primary
+                : inTune
+                ? green
+                : context.colors.outlineVariant,
+          ),
         ),
         child: Center(
           child: Text(
             note,
             style: context.bodyMedium!.copyWith(
-              color: selected
+              color: inTune
+                  ? onGreen
+                  : selected
                   ? context.colors.onPrimary
                   : context.colors.onSurface,
             ),

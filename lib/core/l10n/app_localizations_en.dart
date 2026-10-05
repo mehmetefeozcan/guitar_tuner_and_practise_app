@@ -201,4 +201,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tuningHalfStepUp => 'Half step up';
+
+  @override
+  String get tuningChromatic => 'Chromatic';
 }

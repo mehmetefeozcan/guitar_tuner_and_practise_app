@@ -1,4 +1,4 @@
-package com.example.guitar_tuner_and_practise_app
+package com.diyapazon.app
 
 import io.flutter.embedding.android.FlutterActivity
 

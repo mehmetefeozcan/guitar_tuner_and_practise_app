@@ -23,7 +23,6 @@ mixin _$TuningStore on _TuningStore, Store {
     () => super.isInTune,
     name: '_TuningStore.isInTune',
   )).value;
-
   late final _$selectedTuningAtom = Atom(
     name: '_TuningStore.selectedTuning',
     context: context,
@@ -57,6 +56,24 @@ mixin _$TuningStore on _TuningStore, Store {
   set selectedStringIndex(int value) {
     _$selectedStringIndexAtom.reportWrite(value, super.selectedStringIndex, () {
       super.selectedStringIndex = value;
+    });
+  }
+
+  late final _$tunedStringsAtom = Atom(
+    name: '_TuningStore.tunedStrings',
+    context: context,
+  );
+
+  @override
+  Set<int> get tunedStrings {
+    _$tunedStringsAtom.reportRead();
+    return super.tunedStrings;
+  }
+
+  @override
+  set tunedStrings(Set<int> value) {
+    _$tunedStringsAtom.reportWrite(value, super.tunedStrings, () {
+      super.tunedStrings = value;
     });
   }
 
@@ -146,12 +163,12 @@ mixin _$TuningStore on _TuningStore, Store {
   }
 
   @override
-  void _onReading(PitchReading value) {
+  void _onReading(PitchReading? raw) {
     final _$actionInfo = _$_TuningStoreActionController.startAction(
       name: '_TuningStore._onReading',
     );
     try {
-      return super._onReading(value);
+      return super._onReading(raw);
     } finally {
       _$_TuningStoreActionController.endAction(_$actionInfo);
     }
@@ -162,6 +179,7 @@ mixin _$TuningStore on _TuningStore, Store {
     return '''
 selectedTuning: ${selectedTuning},
 selectedStringIndex: ${selectedStringIndex},
+tunedStrings: ${tunedStrings},
 referenceHz: ${referenceHz},
 reading: ${reading},
 strings: ${strings},

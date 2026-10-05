@@ -56,5 +56,6 @@
   "tuningStandard": "Standart",
   "tuningDropD": "Drop D",
   "tuningHalfStepDown": "Yarım ses aşağı",
-  "tuningHalfStepUp": "Yarım ses yukarı"
+  "tuningHalfStepUp": "Yarım ses yukarı",
+  "tuningChromatic": "Kromatik"
 }

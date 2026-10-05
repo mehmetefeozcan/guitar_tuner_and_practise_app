@@ -439,6 +439,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Half step up'**
   String get tuningHalfStepUp;
+
+  /// No description provided for @tuningChromatic.
+  ///
+  /// In en, this message translates to:
+  /// **'Chromatic'**
+  String get tuningChromatic;
 }
 
 class _AppLocalizationsDelegate
