@@ -1,53 +1,57 @@
 import 'package:guitar_tuner_and_practise_app/core/extension/theme_context_extension.dart';
-import 'package:guitar_tuner_and_practise_app/core/theme/app_colors.dart';
+import 'package:guitar_tuner_and_practise_app/features/tuning/store/tuning_store.dart';
+import 'package:guitar_tuner_and_practise_app/features/tuning/model/tuning_type.dart';
+import 'package:guitar_tuner_and_practise_app/core/extension/main_extension.dart';
 
+import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter/material.dart';
 
+/// Hazır akort düzenleri arasında yatay geçiş.
 class QuickTuningTypeSelectWidget extends StatelessWidget {
-  const new({super.key});
+  final TuningStore store;
 
-  static int selected = 0;
-  static List<String> types = [
-    "Standart",
-    "Drop D",
-    "Half Bemol",
-    "Half Sharp",
-  ];
+  const new({super.key, required this.store});
 
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
-      child: Row(
-        spacing: context.space2,
-        children: List.generate(
-          types.length,
-          (index) => buildTuningType(context, index),
+      child: Observer(
+        builder: (context) => Row(
+          spacing: context.space2,
+          children: TuningType.values
+              .map((type) => buildTuningType(context, type))
+              .toList(),
         ),
       ),
     );
   }
 
-  Widget buildTuningType(BuildContext context, int index) {
-    return Container(
-      padding: EdgeInsets.symmetric(
-        vertical: context.space2,
-        horizontal: context.space6,
-      ),
-      decoration: BoxDecoration(
-        color: index == selected
-            ? AppColors.darkAccent
-            : AppColors.darkSurface200,
-        borderRadius: BorderRadius.circular(context.radiusPill),
-        border: Border.all(width: 1, color: AppColors.darkBorder),
-      ),
-      child: Text(
-        types[index],
-        style: context.numericS.copyWith(
-          color: index == selected
-              ? AppColors.onAccent
-              : AppColors.darkInkMuted,
-          fontWeight: FontWeight.w600,
+  Widget buildTuningType(BuildContext context, TuningType type) {
+    final selected = type == store.selectedTuning;
+
+    return GestureDetector(
+      onTap: () => store.selectTuning(type),
+      child: Container(
+        padding: EdgeInsets.symmetric(
+          vertical: context.space2,
+          horizontal: context.space6,
+        ),
+        decoration: BoxDecoration(
+          color: selected
+              ? context.colors.primary
+              : context.colors.surfaceContainer,
+          borderRadius: BorderRadius.circular(context.radiusPill),
+          border: Border.all(width: 1, color: context.colors.outlineVariant),
+        ),
+        child: Text(
+          type.label(context),
+          style: context.numericS.copyWith(
+            color: selected
+                ? context.colors.onPrimary
+                : context.colors.onSurfaceVariant,
+            fontWeight: FontWeight.w600,
+          ),
         ),
       ),
     );

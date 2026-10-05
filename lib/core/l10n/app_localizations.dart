@@ -385,6 +385,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Sharp'**
   String get sharp;
+
+  /// No description provided for @inTune.
+  ///
+  /// In en, this message translates to:
+  /// **'In tune'**
+  String get inTune;
+
+  /// No description provided for @goodMorning.
+  ///
+  /// In en, this message translates to:
+  /// **'Good morning'**
+  String get goodMorning;
+
+  /// No description provided for @goodAfternoon.
+  ///
+  /// In en, this message translates to:
+  /// **'Good afternoon'**
+  String get goodAfternoon;
+
+  /// No description provided for @goodEvening.
+  ///
+  /// In en, this message translates to:
+  /// **'Good evening'**
+  String get goodEvening;
+
+  /// No description provided for @goodNight.
+  ///
+  /// In en, this message translates to:
+  /// **'Good night'**
+  String get goodNight;
+
+  /// No description provided for @tuningStandard.
+  ///
+  /// In en, this message translates to:
+  /// **'Standard'**
+  String get tuningStandard;
+
+  /// No description provided for @tuningDropD.
+  ///
+  /// In en, this message translates to:
+  /// **'Drop D'**
+  String get tuningDropD;
+
+  /// No description provided for @tuningHalfStepDown.
+  ///
+  /// In en, this message translates to:
+  /// **'Half step down'**
+  String get tuningHalfStepDown;
+
+  /// No description provided for @tuningHalfStepUp.
+  ///
+  /// In en, this message translates to:
+  /// **'Half step up'**
+  String get tuningHalfStepUp;
 }
 
 class _AppLocalizationsDelegate

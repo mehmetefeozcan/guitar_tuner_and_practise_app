@@ -174,4 +174,31 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get sharp => 'Sharp';
+
+  @override
+  String get inTune => 'In tune';
+
+  @override
+  String get goodMorning => 'Good morning';
+
+  @override
+  String get goodAfternoon => 'Good afternoon';
+
+  @override
+  String get goodEvening => 'Good evening';
+
+  @override
+  String get goodNight => 'Good night';
+
+  @override
+  String get tuningStandard => 'Standard';
+
+  @override
+  String get tuningDropD => 'Drop D';
+
+  @override
+  String get tuningHalfStepDown => 'Half step down';
+
+  @override
+  String get tuningHalfStepUp => 'Half step up';
 }

@@ -1,0 +1,29 @@
+import 'package:guitar_tuner_and_practise_app/core/extension/main_extension.dart';
+
+import 'package:flutter/widgets.dart';
+
+/// Hazır akort düzenleri — kalın telden (6.) ince tele (1.) doğru sıralı.
+///
+/// Görünen ad burada tutulmaz, `label` ile l10n'den gelir.
+enum TuningType {
+  standard(['E2', 'A2', 'D3', 'G3', 'B3', 'E4']),
+  dropD(['D2', 'A2', 'D3', 'G3', 'B3', 'E4']),
+  halfStepDown(['Eb2', 'Ab2', 'Db3', 'Gb3', 'Bb3', 'Eb4']),
+  halfStepUp(['F2', 'Bb2', 'Eb3', 'Ab3', 'C4', 'F4']);
+
+  const TuningType(this.strings);
+
+  /// Tellerin hedef notaları, kalından inceye.
+  final List<String> strings;
+
+  String label(BuildContext context) {
+    final l10n = context.l10n;
+
+    return switch (this) {
+      TuningType.standard => l10n.tuningStandard,
+      TuningType.dropD => l10n.tuningDropD,
+      TuningType.halfStepDown => l10n.tuningHalfStepDown,
+      TuningType.halfStepUp => l10n.tuningHalfStepUp,
+    };
+  }
+}

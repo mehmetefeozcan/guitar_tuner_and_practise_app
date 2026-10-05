@@ -1,13 +1,16 @@
 import 'package:guitar_tuner_and_practise_app/core/extension/theme_context_extension.dart';
+import 'package:guitar_tuner_and_practise_app/features/home/model/weekly_progress.dart';
 import 'package:guitar_tuner_and_practise_app/core/extension/main_extension.dart';
-import 'package:guitar_tuner_and_practise_app/core/theme/app_colors.dart';
 import 'package:guitar_tuner_and_practise_app/core/widgets/index.dart';
 
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter/material.dart';
 
+/// Haftanın pratik süresi, hedefe göre durumu ve geçen haftaya farkı.
 class HomeWeeklyProgressWidget extends StatelessWidget {
-  const new({super.key});
+  final WeeklyProgress progress;
+
+  const new({super.key, required this.progress});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +18,7 @@ class HomeWeeklyProgressWidget extends StatelessWidget {
       width: context.width,
       padding: context.cardPadding,
       decoration: BoxDecoration(
-        color: AppColors.darkSurface200,
+        color: context.colors.surfaceContainer,
         borderRadius: BorderRadius.circular(context.radiusMd),
       ),
       child: Column(
@@ -26,18 +29,18 @@ class HomeWeeklyProgressWidget extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             spacing: context.space1,
             children: [
-              Point(size: 8.w, color: AppColors.darkAccent),
+              Point(size: 8.w, color: context.colors.primary),
               Text(
                 context.l10n.thisWeek.toUpperCase(),
                 style: context.bodySmall!.copyWith(
-                  color: AppColors.darkInkSubtle,
+                  color: context.ds.inkSubtle,
                   fontWeight: FontWeight.w600,
                 ),
               ),
             ],
           ),
           buildTimeRow(context),
-          LinearIndicator(progress: 10),
+          LinearIndicator(progress: progress.progress),
           buildWeeklyDiff(context),
         ],
       ),
@@ -51,50 +54,64 @@ class HomeWeeklyProgressWidget extends StatelessWidget {
         Text.rich(
           TextSpan(
             children: [
-              TextSpan(text: "4", style: context.readout),
+              TextSpan(
+                text: progress.hours.toString(),
+                style: context.readout,
+              ),
               TextSpan(
                 text: " ${context.l10n.h} ",
                 style: context.bodySmall!.copyWith(
-                  color: AppColors.darkInkMuted,
+                  color: context.colors.onSurfaceVariant,
                 ),
               ),
-              TextSpan(text: "12", style: context.readout),
+              TextSpan(
+                text: progress.remainingMinutes.toString(),
+                style: context.readout,
+              ),
               TextSpan(
                 text: " ${context.l10n.min}",
                 style: context.bodySmall!.copyWith(
-                  color: AppColors.darkInkMuted,
+                  color: context.colors.onSurfaceVariant,
                 ),
               ),
             ],
           ),
         ),
         Text(
-          context.l10n.goalPractiseHour(5),
-          style: context.numericS.copyWith(color: AppColors.darkInkSubtle),
+          context.l10n.goalPractiseHour(progress.goalHours),
+          style: context.numericS.copyWith(color: context.ds.inkSubtle),
         ),
       ],
     );
   }
 
   Widget buildWeeklyDiff(BuildContext context) {
+    final diff = progress.diffMinutes;
+    final sign = diff >= 0 ? "+" : "−";
+
     return Text.rich(
       TextSpan(
         children: [
           TextSpan(
             text: context.l10n.comparedToLastWeek,
-            style: context.bodySmall!.copyWith(color: AppColors.darkInkMuted),
+            style: context.bodySmall!.copyWith(
+              color: context.colors.onSurfaceVariant,
+            ),
           ),
           TextSpan(
-            text: " +48 ${context.l10n.min}",
+            text: " $sign${diff.abs()} ${context.l10n.min}",
             style: context.bodySmall!.copyWith(
-              color: AppColors.darkSignalTrue,
+              color: diff >= 0 ? context.ds.signalTrue : context.ds.signalOff,
               fontWeight: FontWeight.w600,
             ),
           ),
 
           TextSpan(
-            text: " · 2.5 ${context.l10n.theClockWithMetronome}",
-            style: context.bodySmall!.copyWith(color: AppColors.darkInkMuted),
+            text:
+                " · ${progress.metronomeHours} ${context.l10n.theClockWithMetronome}",
+            style: context.bodySmall!.copyWith(
+              color: context.colors.onSurfaceVariant,
+            ),
           ),
         ],
       ),
