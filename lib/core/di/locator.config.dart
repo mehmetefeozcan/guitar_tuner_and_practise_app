@@ -21,6 +21,7 @@ import '../../features/not_found/store/not_found_store.dart' as _i806;
 import '../../features/profile/store/profile_store.dart' as _i8;
 import '../../features/progress/store/progress_store.dart' as _i807;
 import '../../features/splash/store/splash_store.dart' as _i144;
+import '../../features/tuning/service/pitch_detector_service.dart' as _i618;
 import '../../features/tuning/store/tuning_store.dart' as _i1057;
 import '../../features/under_construction/store/under_construction_store.dart'
     as _i838;
@@ -51,7 +52,6 @@ extension GetItInjectableX on _i174.GetIt {
     gh.factory<_i8.ProfileStore>(() => _i8.ProfileStore());
     gh.factory<_i807.ProgressStore>(() => _i807.ProgressStore());
     gh.factory<_i144.SplashStore>(() => _i144.SplashStore());
-    gh.factory<_i1057.TuningStore>(() => _i1057.TuningStore());
     gh.factory<_i838.UnderConstructionStore>(
       () => _i838.UnderConstructionStore(),
     );
@@ -60,11 +60,17 @@ extension GetItInjectableX on _i174.GetIt {
       () => dioModule.dio(),
       preResolve: true,
     );
+    gh.factory<_i618.PitchDetectorService>(
+      () => _i618.MockPitchDetectorService(),
+    );
     gh.factory<_i587.CustomDioService>(
       () => _i587.CustomDioService(gh<_i361.Dio>()),
     );
     gh.lazySingleton<_i459.HiveService>(
       () => storageModule.settingsStorage(gh<_i979.Box<dynamic>>()),
+    );
+    gh.factory<_i1057.TuningStore>(
+      () => _i1057.TuningStore(gh<_i618.PitchDetectorService>()),
     );
     gh.singleton<_i1072.LanguageStore>(
       () => _i1072.LanguageStore(gh<_i459.HiveService>()),

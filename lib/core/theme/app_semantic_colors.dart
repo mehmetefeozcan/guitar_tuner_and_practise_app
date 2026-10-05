@@ -30,6 +30,7 @@ class AppSemanticColors extends ThemeExtension<AppSemanticColors> {
     required this.paperAccent,
     required this.focusRingPaper,
     required this.focusRing,
+    required this.inkSubtle,
     required this.accentText,
     required this.accentWash,
     required this.accentDim,
@@ -70,6 +71,12 @@ class AppSemanticColors extends ThemeExtension<AppSemanticColors> {
   // ─── Odak ───────────────────────────────────────────────────────────
   /// Chrome yüzeylerinde klavye odağı: 2px kalınlık, 2px offset.
   final Color focusRing;
+
+  // ─── Metin ──────────────────────────────────────────────────────────
+  /// Üçüncü seviye metin: bölüm etiketi, yardımcı satır, birim.
+  /// `ColorScheme`'in `onSurface` / `onSurfaceVariant` ikilisi yetmiyor —
+  /// bu onlardan bir kademe daha kısık.
+  final Color inkSubtle;
 
   // ─── Amber varyantları ──────────────────────────────────────────────
   /// Amber **metin** ve ikonlar. `colorScheme.primary` metin olarak açık
@@ -135,6 +142,7 @@ class AppSemanticColors extends ThemeExtension<AppSemanticColors> {
     paperAccent: AppColors.darkPaperAccent,
     focusRingPaper: AppColors.focusRingPaper,
     focusRing: AppColors.darkFocusRing,
+    inkSubtle: AppColors.darkInkSubtle,
     accentText: AppColors.darkAccentText,
     accentWash: AppColors.darkAccentWash,
     accentDim: AppColors.darkAccentDim,
@@ -169,6 +177,7 @@ class AppSemanticColors extends ThemeExtension<AppSemanticColors> {
     paperAccent: AppColors.lightPaperAccent,
     focusRingPaper: AppColors.focusRingPaper,
     focusRing: AppColors.lightFocusRing,
+    inkSubtle: AppColors.lightInkSubtle,
     accentText: AppColors.lightAccentText,
     accentWash: AppColors.lightAccentWash,
     accentDim: AppColors.lightAccentDim,
@@ -204,6 +213,7 @@ class AppSemanticColors extends ThemeExtension<AppSemanticColors> {
     Color? paperAccent,
     Color? focusRingPaper,
     Color? focusRing,
+    Color? inkSubtle,
     Color? accentText,
     Color? accentWash,
     Color? accentDim,
@@ -225,6 +235,7 @@ class AppSemanticColors extends ThemeExtension<AppSemanticColors> {
       paperAccent: paperAccent ?? this.paperAccent,
       focusRingPaper: focusRingPaper ?? this.focusRingPaper,
       focusRing: focusRing ?? this.focusRing,
+      inkSubtle: inkSubtle ?? this.inkSubtle,
       accentText: accentText ?? this.accentText,
       accentWash: accentWash ?? this.accentWash,
       accentDim: accentDim ?? this.accentDim,
@@ -251,6 +262,7 @@ class AppSemanticColors extends ThemeExtension<AppSemanticColors> {
       paperAccent: Color.lerp(paperAccent, other.paperAccent, t)!,
       focusRingPaper: Color.lerp(focusRingPaper, other.focusRingPaper, t)!,
       focusRing: Color.lerp(focusRing, other.focusRing, t)!,
+      inkSubtle: Color.lerp(inkSubtle, other.inkSubtle, t)!,
       accentText: Color.lerp(accentText, other.accentText, t)!,
       accentWash: Color.lerp(accentWash, other.accentWash, t)!,
       accentDim: Color.lerp(accentDim, other.accentDim, t)!,

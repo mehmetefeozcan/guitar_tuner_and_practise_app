@@ -47,5 +47,14 @@
   "done": "Done",
   "strings": "Strings",
   "flat": "Flat",
-  "sharp": "Sharp"
+  "sharp": "Sharp",
+  "inTune": "In tune",
+  "goodMorning": "Good morning",
+  "goodAfternoon": "Good afternoon",
+  "goodEvening": "Good evening",
+  "goodNight": "Good night",
+  "tuningStandard": "Standard",
+  "tuningDropD": "Drop D",
+  "tuningHalfStepDown": "Half step down",
+  "tuningHalfStepUp": "Half step up"
 }

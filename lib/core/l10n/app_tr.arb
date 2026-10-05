@@ -47,5 +47,14 @@
   "done": "Bitti",
   "strings": "Teller",
   "flat": "Pes",
-  "sharp": "Tiz"
+  "sharp": "Tiz",
+  "inTune": "Akortta",
+  "goodMorning": "Günaydın",
+  "goodAfternoon": "İyi günler",
+  "goodEvening": "İyi akşamlar",
+  "goodNight": "İyi geceler",
+  "tuningStandard": "Standart",
+  "tuningDropD": "Drop D",
+  "tuningHalfStepDown": "Yarım ses aşağı",
+  "tuningHalfStepUp": "Yarım ses yukarı"
 }

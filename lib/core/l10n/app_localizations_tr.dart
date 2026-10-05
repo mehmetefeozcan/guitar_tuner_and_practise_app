@@ -174,4 +174,31 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get sharp => 'Tiz';
+
+  @override
+  String get inTune => 'Akortta';
+
+  @override
+  String get goodMorning => 'Günaydın';
+
+  @override
+  String get goodAfternoon => 'İyi günler';
+
+  @override
+  String get goodEvening => 'İyi akşamlar';
+
+  @override
+  String get goodNight => 'İyi geceler';
+
+  @override
+  String get tuningStandard => 'Standart';
+
+  @override
+  String get tuningDropD => 'Drop D';
+
+  @override
+  String get tuningHalfStepDown => 'Yarım ses aşağı';
+
+  @override
+  String get tuningHalfStepUp => 'Yarım ses yukarı';
 }

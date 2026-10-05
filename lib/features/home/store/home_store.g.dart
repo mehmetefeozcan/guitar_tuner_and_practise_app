@@ -9,21 +9,57 @@ part of 'home_store.dart';
 // ignore_for_file: non_constant_identifier_names, unnecessary_brace_in_string_interps, unnecessary_lambdas, prefer_expression_function_bodies, lines_longer_than_80_chars, avoid_as, avoid_annotating_with_dynamic, no_leading_underscores_for_local_identifiers
 
 mixin _$HomeStore on _HomeStore, Store {
-  late final _$navigateToHomeAtom = Atom(
-    name: '_HomeStore.navigateToHome',
+  late final _$weeklyProgressAtom = Atom(
+    name: '_HomeStore.weeklyProgress',
     context: context,
   );
 
   @override
-  bool get navigateToHome {
-    _$navigateToHomeAtom.reportRead();
-    return super.navigateToHome;
+  WeeklyProgress? get weeklyProgress {
+    _$weeklyProgressAtom.reportRead();
+    return super.weeklyProgress;
   }
 
   @override
-  set navigateToHome(bool value) {
-    _$navigateToHomeAtom.reportWrite(value, super.navigateToHome, () {
-      super.navigateToHome = value;
+  set weeklyProgress(WeeklyProgress? value) {
+    _$weeklyProgressAtom.reportWrite(value, super.weeklyProgress, () {
+      super.weeklyProgress = value;
+    });
+  }
+
+  late final _$currentHomeworkAtom = Atom(
+    name: '_HomeStore.currentHomework',
+    context: context,
+  );
+
+  @override
+  HomeworkItem? get currentHomework {
+    _$currentHomeworkAtom.reportRead();
+    return super.currentHomework;
+  }
+
+  @override
+  set currentHomework(HomeworkItem? value) {
+    _$currentHomeworkAtom.reportWrite(value, super.currentHomework, () {
+      super.currentHomework = value;
+    });
+  }
+
+  late final _$lastPracticedAtom = Atom(
+    name: '_HomeStore.lastPracticed',
+    context: context,
+  );
+
+  @override
+  PracticeEntry? get lastPracticed {
+    _$lastPracticedAtom.reportRead();
+    return super.lastPracticed;
+  }
+
+  @override
+  set lastPracticed(PracticeEntry? value) {
+    _$lastPracticedAtom.reportWrite(value, super.lastPracticed, () {
+      super.lastPracticed = value;
     });
   }
 
@@ -40,7 +76,9 @@ mixin _$HomeStore on _HomeStore, Store {
   @override
   String toString() {
     return '''
-navigateToHome: ${navigateToHome}
+weeklyProgress: ${weeklyProgress},
+currentHomework: ${currentHomework},
+lastPracticed: ${lastPracticed}
     ''';
   }
 }

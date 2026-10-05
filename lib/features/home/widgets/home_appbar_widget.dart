@@ -1,14 +1,17 @@
 import 'package:guitar_tuner_and_practise_app/core/extension/theme_context_extension.dart';
+import 'package:guitar_tuner_and_practise_app/features/home/model/greeting_kind.dart';
 import 'package:guitar_tuner_and_practise_app/core/extension/main_extension.dart';
 import 'package:guitar_tuner_and_practise_app/core/assets/app_assets.dart';
-import 'package:guitar_tuner_and_practise_app/core/theme/app_colors.dart';
 
 import 'package:moment_dart/moment_dart.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
+/// Tarih, günün selamı ve ayarlar.
 class HomeAppbarWidget extends StatelessWidget {
-  const new({super.key});
+  final GreetingKind greeting;
+
+  const new({super.key, required this.greeting});
 
   @override
   Widget build(BuildContext context) {
@@ -21,13 +24,13 @@ class HomeAppbarWidget extends StatelessWidget {
           children: [
             Text(
               Moment.now().format("dddd, DD MMMM", true),
-              style: context.labelStyle.copyWith(
-                color: AppColors.darkInkSubtle,
-              ),
+              style: context.labelStyle.copyWith(color: context.ds.inkSubtle),
             ),
             Text(
-              "Good evening",
-              style: context.displayMedium!.copyWith(color: AppColors.darkInk),
+              greeting.label(context),
+              style: context.displayMedium!.copyWith(
+                color: context.colors.onSurface,
+              ),
             ),
           ],
         ),
@@ -35,7 +38,7 @@ class HomeAppbarWidget extends StatelessWidget {
         SvgPicture.asset(
           AppAssets.icons.settings,
           colorFilter: ColorFilter.mode(
-            AppColors.darkInkMuted,
+            context.colors.onSurfaceVariant,
             BlendMode.srcIn,
           ),
         ),
