@@ -1,8 +1,8 @@
-import 'package:guitar_tuner_and_practise_app/features/not_found/view/not_found_view.dart';
-import 'package:guitar_tuner_and_practise_app/core/routing/routes/main/main_router.dart';
-import 'package:guitar_tuner_and_practise_app/core/routing/routes/main/main_routes.dart';
-import 'package:guitar_tuner_and_practise_app/core/routing/custom_transition.dart';
-import 'package:guitar_tuner_and_practise_app/core/constants/app_constants.dart';
+import 'package:studio_accordo_app_mobile/features/not_found/view/not_found_view.dart';
+import 'package:studio_accordo_app_mobile/core/routing/routes/main/main_router.dart';
+import 'package:studio_accordo_app_mobile/core/routing/routes/main/main_routes.dart';
+import 'package:studio_accordo_app_mobile/core/routing/custom_transition.dart';
+import 'package:studio_accordo_app_mobile/core/constants/app_constants.dart';
 
 import 'package:go_router/go_router.dart';
 import 'package:flutter/foundation.dart';

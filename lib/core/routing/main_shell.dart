@@ -1,4 +1,4 @@
-import 'package:guitar_tuner_and_practise_app/core/widgets/bottom_navbar/general_bottom_navbar.dart';
+import 'package:studio_accordo_app_mobile/core/widgets/bottom_navbar/general_bottom_navbar.dart';
 
 import 'package:go_router/go_router.dart';
 import 'package:flutter/material.dart';

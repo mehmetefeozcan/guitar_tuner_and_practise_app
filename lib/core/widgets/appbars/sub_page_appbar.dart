@@ -1,6 +1,6 @@
-import 'package:guitar_tuner_and_practise_app/core/extension/main_extension.dart';
-import 'package:guitar_tuner_and_practise_app/core/assets/app_assets.dart';
-import 'package:guitar_tuner_and_practise_app/core/theme/app_colors.dart';
+import 'package:studio_accordo_app_mobile/core/extension/main_extension.dart';
+import 'package:studio_accordo_app_mobile/core/assets/app_assets.dart';
+import 'package:studio_accordo_app_mobile/core/theme/app_colors.dart';
 
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';

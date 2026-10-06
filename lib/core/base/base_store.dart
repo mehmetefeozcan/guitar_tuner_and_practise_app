@@ -1,4 +1,4 @@
-import 'package:guitar_tuner_and_practise_app/core/network/result.dart';
+import 'package:studio_accordo_app_mobile/core/network/result.dart';
 
 import 'package:mobx/mobx.dart';
 import 'package:dio/dio.dart';

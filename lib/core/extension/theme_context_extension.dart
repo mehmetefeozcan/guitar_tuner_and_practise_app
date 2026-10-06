@@ -1,20 +1,20 @@
-import 'package:guitar_tuner_and_practise_app/core/theme/app_semantic_colors.dart';
-import 'package:guitar_tuner_and_practise_app/core/theme/text_theme.dart';
+import 'package:studio_accordo_app_mobile/core/theme/app_semantic_colors.dart';
+import 'package:studio_accordo_app_mobile/core/theme/text_theme.dart';
 
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter/material.dart';
 
-/// Diyapazon'a özel erişimciler.
+/// Studio Accordo'ya özel erişimciler.
 ///
 /// Mevcut `MainContextExtension`'ın yanında durur; oradaki Material slot
 /// kısayolları (`context.bodyMedium`, `context.colors`, …) olduğu gibi kalır.
 /// Buradakiler sistemin kendi sözlüğü.
 ///
 /// Çakışma uyarısı: `MainContextExtension` içindeki `radiusSmall/Medium/Large`
-/// 8/16/32 veriyor, Diyapazon'un ölçeği ise 4/8/12/18/999. İkisi bir arada
+/// 8/16/32 veriyor, Studio Accordo'nun ölçeği ise 4/8/12/18/999. İkisi bir arada
 /// tutarsız sonuç verir — aşağıdaki [radiusSm] ailesine geçip o üçünü
 /// silmeni öneririm.
-extension DiyapazonTheme on BuildContext {
+extension StudioAccordoTheme on BuildContext {
   /// Kâğıt yüzeyi, sinyal renkleri, amber varyantları ve grafik serileri.
   ///
   /// ```dart

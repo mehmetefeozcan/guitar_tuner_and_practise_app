@@ -1,9 +1,9 @@
 // profile_view.dart
 
-import 'package:guitar_tuner_and_practise_app/features/profile/store/profile_store.dart';
-import 'package:guitar_tuner_and_practise_app/core/base/base_store.dart';
-import 'package:guitar_tuner_and_practise_app/core/base/base_view.dart';
-import 'package:guitar_tuner_and_practise_app/core/di/locator.dart';
+import 'package:studio_accordo_app_mobile/features/profile/store/profile_store.dart';
+import 'package:studio_accordo_app_mobile/core/base/base_store.dart';
+import 'package:studio_accordo_app_mobile/core/base/base_view.dart';
+import 'package:studio_accordo_app_mobile/core/di/locator.dart';
 
 import 'package:flutter/material.dart';
 

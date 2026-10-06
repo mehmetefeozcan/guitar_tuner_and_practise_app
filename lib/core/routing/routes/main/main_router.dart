@@ -1,15 +1,15 @@
-import 'package:guitar_tuner_and_practise_app/core/extension/main_extension.dart';
-import 'package:guitar_tuner_and_practise_app/core/routing/routes/main/main_routes.dart';
-import 'package:guitar_tuner_and_practise_app/core/routing/custom_transition.dart';
-import 'package:guitar_tuner_and_practise_app/core/routing/main_shell.dart';
+import 'package:studio_accordo_app_mobile/core/extension/main_extension.dart';
+import 'package:studio_accordo_app_mobile/core/routing/routes/main/main_routes.dart';
+import 'package:studio_accordo_app_mobile/core/routing/custom_transition.dart';
+import 'package:studio_accordo_app_mobile/core/routing/main_shell.dart';
 
 import 'package:go_router/go_router.dart';
 
 // Page Imports
-import 'package:guitar_tuner_and_practise_app/features/under_construction/view/under_construction_view.dart';
-import 'package:guitar_tuner_and_practise_app/features/tuning/view/tuning_view.dart';
-import 'package:guitar_tuner_and_practise_app/features/splash/view/splash_view.dart';
-import 'package:guitar_tuner_and_practise_app/features/home/view/home_view.dart';
+import 'package:studio_accordo_app_mobile/features/under_construction/view/under_construction_view.dart';
+import 'package:studio_accordo_app_mobile/features/tuning/view/tuning_view.dart';
+import 'package:studio_accordo_app_mobile/features/splash/view/splash_view.dart';
+import 'package:studio_accordo_app_mobile/features/home/view/home_view.dart';
 
 class MainRouter {
   static List<RouteBase> routes = [

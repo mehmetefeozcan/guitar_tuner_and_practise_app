@@ -1,3 +1,3 @@
-# guitar_tuner_and_practise_app
+# studio_accordo_app_mobile
 
 A new Flutter project.

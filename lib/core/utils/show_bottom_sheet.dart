@@ -1,4 +1,4 @@
-import 'package:guitar_tuner_and_practise_app/core/constants/app_constants.dart';
+import 'package:studio_accordo_app_mobile/core/constants/app_constants.dart';
 import 'package:flutter/material.dart';
 
 Future<T?> showGlobalBottomSheet<T>(

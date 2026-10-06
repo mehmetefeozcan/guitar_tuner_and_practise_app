@@ -1,7 +1,7 @@
-import 'package:guitar_tuner_and_practise_app/features/tuning/service/pitch_detector_service.dart';
-import 'package:guitar_tuner_and_practise_app/features/tuning/service/yin_detector.dart';
-import 'package:guitar_tuner_and_practise_app/features/tuning/service/pitch_math.dart';
-import 'package:guitar_tuner_and_practise_app/features/tuning/model/pitch_reading.dart';
+import 'package:studio_accordo_app_mobile/features/tuning/service/pitch_detector_service.dart';
+import 'package:studio_accordo_app_mobile/features/tuning/service/yin_detector.dart';
+import 'package:studio_accordo_app_mobile/features/tuning/service/pitch_math.dart';
+import 'package:studio_accordo_app_mobile/features/tuning/model/pitch_reading.dart';
 
 import 'package:injectable/injectable.dart';
 import 'package:record/record.dart';

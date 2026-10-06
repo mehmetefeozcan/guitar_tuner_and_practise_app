@@ -1,5 +1,5 @@
-import 'package:guitar_tuner_and_practise_app/core/theme/app_semantic_colors.dart';
-import 'package:guitar_tuner_and_practise_app/core/theme/app_theme_colors.dart';
+import 'package:studio_accordo_app_mobile/core/theme/app_semantic_colors.dart';
+import 'package:studio_accordo_app_mobile/core/theme/app_theme_colors.dart';
 import 'package:injectable/injectable.dart';
 import 'package:flutter/material.dart';
 

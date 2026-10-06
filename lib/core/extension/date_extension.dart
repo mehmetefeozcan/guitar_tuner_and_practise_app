@@ -1,4 +1,4 @@
-import 'package:guitar_tuner_and_practise_app/core/extension/main_extension.dart';
+import 'package:studio_accordo_app_mobile/core/extension/main_extension.dart';
 
 import 'package:moment_dart/moment_dart.dart';
 import 'package:flutter/widgets.dart';

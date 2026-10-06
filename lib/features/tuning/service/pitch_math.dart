@@ -1,4 +1,4 @@
-import 'package:guitar_tuner_and_practise_app/features/tuning/model/pitch_reading.dart';
+import 'package:studio_accordo_app_mobile/features/tuning/model/pitch_reading.dart';
 
 import 'dart:typed_data';
 import 'dart:math';

@@ -101,7 +101,7 @@ class AppTextStyles {
 /// değil. Material widget'ları (AppBar, ListTile, ElevatedButton, …) buradan
 /// okur.
 ///
-/// Diyapazon'un kendi adlarını kullanmak her zaman daha açıktır; bu eşleme
+/// Studio Accordo'nun kendi adlarını kullanmak her zaman daha açıktır; bu eşleme
 /// yalnızca hazır Material widget'larının doğru görünmesi için var.
 class AppTextTheme {
   const AppTextTheme._();

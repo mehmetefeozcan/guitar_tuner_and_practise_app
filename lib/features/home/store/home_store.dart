@@ -1,10 +1,10 @@
 // home_store.dart
 
-import 'package:guitar_tuner_and_practise_app/features/home/model/weekly_progress.dart';
-import 'package:guitar_tuner_and_practise_app/features/home/model/practice_entry.dart';
-import 'package:guitar_tuner_and_practise_app/features/home/model/homework_item.dart';
-import 'package:guitar_tuner_and_practise_app/features/home/model/greeting_kind.dart';
-import 'package:guitar_tuner_and_practise_app/core/base/base_store.dart';
+import 'package:studio_accordo_app_mobile/features/home/model/weekly_progress.dart';
+import 'package:studio_accordo_app_mobile/features/home/model/practice_entry.dart';
+import 'package:studio_accordo_app_mobile/features/home/model/homework_item.dart';
+import 'package:studio_accordo_app_mobile/features/home/model/greeting_kind.dart';
+import 'package:studio_accordo_app_mobile/core/base/base_store.dart';
 
 import 'package:injectable/injectable.dart';
 import 'package:mobx/mobx.dart';

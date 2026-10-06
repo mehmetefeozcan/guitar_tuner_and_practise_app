@@ -1,4 +1,4 @@
-package com.diyapazon.app
+package com.studioaccordo.app
 
 import io.flutter.embedding.android.FlutterActivity
 

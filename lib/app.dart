@@ -1,10 +1,10 @@
-import 'package:guitar_tuner_and_practise_app/core/l10n/app_localizations.dart';
-import 'package:guitar_tuner_and_practise_app/core/l10n/supported_locales.dart';
-import 'package:guitar_tuner_and_practise_app/core/state/language_store.dart';
-import 'package:guitar_tuner_and_practise_app/core/routing/app_router.dart';
-import 'package:guitar_tuner_and_practise_app/core/state/theme_store.dart';
-import 'package:guitar_tuner_and_practise_app/core/theme/app_theme.dart';
-import 'package:guitar_tuner_and_practise_app/core/di/locator.dart';
+import 'package:studio_accordo_app_mobile/core/l10n/app_localizations.dart';
+import 'package:studio_accordo_app_mobile/core/l10n/supported_locales.dart';
+import 'package:studio_accordo_app_mobile/core/state/language_store.dart';
+import 'package:studio_accordo_app_mobile/core/routing/app_router.dart';
+import 'package:studio_accordo_app_mobile/core/state/theme_store.dart';
+import 'package:studio_accordo_app_mobile/core/theme/app_theme.dart';
+import 'package:studio_accordo_app_mobile/core/di/locator.dart';
 
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

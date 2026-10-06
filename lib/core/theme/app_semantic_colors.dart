@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'app_colors.dart';
 
-/// Material'ın `ColorScheme`'inde karşılığı olmayan Diyapazon tokenları.
+/// Material'ın `ColorScheme`'inde karşılığı olmayan Studio Accordo tokenları.
 ///
 /// `ColorScheme` genel amaçlı bir arayüz; bu uygulamanın iki şeye ihtiyacı var
 /// ve ikisi de orada yok:

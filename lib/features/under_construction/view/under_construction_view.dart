@@ -1,15 +1,15 @@
 // under_construction_view.dart
 
-import 'package:guitar_tuner_and_practise_app/features/under_construction/store/under_construction_store.dart';
-import 'package:guitar_tuner_and_practise_app/core/widgets/buttons/custom_elevated_button.dart';
-import 'package:guitar_tuner_and_practise_app/core/extension/theme_context_extension.dart';
-import 'package:guitar_tuner_and_practise_app/core/routing/routes/main/main_routes.dart';
-import 'package:guitar_tuner_and_practise_app/core/extension/main_extension.dart';
-import 'package:guitar_tuner_and_practise_app/core/assets/app_assets.dart';
-import 'package:guitar_tuner_and_practise_app/core/theme/app_colors.dart';
-import 'package:guitar_tuner_and_practise_app/core/base/base_store.dart';
-import 'package:guitar_tuner_and_practise_app/core/base/base_view.dart';
-import 'package:guitar_tuner_and_practise_app/core/di/locator.dart';
+import 'package:studio_accordo_app_mobile/features/under_construction/store/under_construction_store.dart';
+import 'package:studio_accordo_app_mobile/core/widgets/buttons/custom_elevated_button.dart';
+import 'package:studio_accordo_app_mobile/core/extension/theme_context_extension.dart';
+import 'package:studio_accordo_app_mobile/core/routing/routes/main/main_routes.dart';
+import 'package:studio_accordo_app_mobile/core/extension/main_extension.dart';
+import 'package:studio_accordo_app_mobile/core/assets/app_assets.dart';
+import 'package:studio_accordo_app_mobile/core/theme/app_colors.dart';
+import 'package:studio_accordo_app_mobile/core/base/base_store.dart';
+import 'package:studio_accordo_app_mobile/core/base/base_view.dart';
+import 'package:studio_accordo_app_mobile/core/di/locator.dart';
 
 import 'package:go_router/go_router.dart';
 import 'package:flutter/material.dart';

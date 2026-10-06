@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:guitar_tuner_and_practise_app/core/l10n/app_localizations.dart';
+import 'package:studio_accordo_app_mobile/core/l10n/app_localizations.dart';
 
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';

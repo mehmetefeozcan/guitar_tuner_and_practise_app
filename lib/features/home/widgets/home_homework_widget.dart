@@ -1,7 +1,7 @@
-import 'package:guitar_tuner_and_practise_app/core/extension/theme_context_extension.dart';
-import 'package:guitar_tuner_and_practise_app/features/home/model/homework_item.dart';
-import 'package:guitar_tuner_and_practise_app/core/extension/main_extension.dart';
-import 'package:guitar_tuner_and_practise_app/core/widgets/index.dart';
+import 'package:studio_accordo_app_mobile/core/extension/theme_context_extension.dart';
+import 'package:studio_accordo_app_mobile/features/home/model/homework_item.dart';
+import 'package:studio_accordo_app_mobile/core/extension/main_extension.dart';
+import 'package:studio_accordo_app_mobile/core/widgets/index.dart';
 
 import 'package:flutter/material.dart';
 import 'package:moment_dart/moment_dart.dart';

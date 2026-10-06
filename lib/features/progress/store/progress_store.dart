@@ -1,6 +1,6 @@
 // progress_store.dart
 
-import 'package:guitar_tuner_and_practise_app/core/base/base_store.dart';
+import 'package:studio_accordo_app_mobile/core/base/base_store.dart';
 
 import 'package:injectable/injectable.dart';
 import 'package:mobx/mobx.dart';

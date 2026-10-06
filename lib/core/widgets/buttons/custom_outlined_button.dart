@@ -1,4 +1,4 @@
-import 'package:guitar_tuner_and_practise_app/core/theme/app_semantic_colors.dart';
+import 'package:studio_accordo_app_mobile/core/theme/app_semantic_colors.dart';
 import 'package:flutter/material.dart';
 
 import 'button_metrics.dart';

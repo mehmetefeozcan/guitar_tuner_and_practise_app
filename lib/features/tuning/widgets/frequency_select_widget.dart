@@ -1,8 +1,8 @@
-import 'package:guitar_tuner_and_practise_app/features/tuning/widgets/frequency_select_sheet.dart';
-import 'package:guitar_tuner_and_practise_app/core/extension/theme_context_extension.dart';
-import 'package:guitar_tuner_and_practise_app/features/tuning/store/tuning_store.dart';
-import 'package:guitar_tuner_and_practise_app/core/extension/main_extension.dart';
-import 'package:guitar_tuner_and_practise_app/core/utils/show_bottom_sheet.dart';
+import 'package:studio_accordo_app_mobile/features/tuning/widgets/frequency_select_sheet.dart';
+import 'package:studio_accordo_app_mobile/core/extension/theme_context_extension.dart';
+import 'package:studio_accordo_app_mobile/features/tuning/store/tuning_store.dart';
+import 'package:studio_accordo_app_mobile/core/extension/main_extension.dart';
+import 'package:studio_accordo_app_mobile/core/utils/show_bottom_sheet.dart';
 
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter/material.dart';

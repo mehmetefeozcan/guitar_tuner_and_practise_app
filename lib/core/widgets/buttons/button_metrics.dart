@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../theme/text_theme.dart';
 
-/// Buton boyları. Diyapazon'un üç boyu var ve her birinin işi belli.
+/// Buton boyları. Studio Accordo'nun üç boyu var ve her birinin işi belli.
 enum AppButtonSize {
   /// 13px yazı, sıkı dolgu — liste satırı içi, kart başlığı yanı.
   ///
@@ -52,7 +52,7 @@ enum AppButtonTone {
 
   /// Geri alınamaz işlem: kayıt silme, ödev iptali.
   ///
-  /// Diyapazon'da yıkıcı eylem **dolgulu değil kenarlıklıdır** — yıkıcı bir
+  /// Studio Accordo'da yıkıcı eylem **dolgulu değil kenarlıklıdır** — yıkıcı bir
   /// işlem hiçbir zaman ekranın amber eylemi değildir. Bu yüzden
   /// [AppButtonTone.danger] yalnızca `CustomOutlinedButton`'da anlam taşır.
   danger,

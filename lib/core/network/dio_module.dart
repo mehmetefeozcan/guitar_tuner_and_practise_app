@@ -1,4 +1,4 @@
-import 'package:guitar_tuner_and_practise_app/core/env/env.dart';
+import 'package:studio_accordo_app_mobile/core/env/env.dart';
 
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 import 'package:injectable/injectable.dart';

@@ -1,8 +1,8 @@
-import 'package:guitar_tuner_and_practise_app/core/storage/hive_initializer.dart';
-import 'package:guitar_tuner_and_practise_app/core/state/language_store.dart';
-import 'package:guitar_tuner_and_practise_app/core/state/theme_store.dart';
-import 'package:guitar_tuner_and_practise_app/core/di/locator.dart';
-import 'package:guitar_tuner_and_practise_app/app.dart';
+import 'package:studio_accordo_app_mobile/core/storage/hive_initializer.dart';
+import 'package:studio_accordo_app_mobile/core/state/language_store.dart';
+import 'package:studio_accordo_app_mobile/core/state/theme_store.dart';
+import 'package:studio_accordo_app_mobile/core/di/locator.dart';
+import 'package:studio_accordo_app_mobile/app.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
