@@ -26,6 +26,8 @@
 	<string>$(FLUTTER_BUILD_NUMBER)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Gitarının sesini dinleyip akort edebilmek için mikrofona erişiyoruz. Ses kaydedilmez ve cihazdan çıkmaz.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -66,7 +68,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>Gitarının sesini dinleyip akort edebilmek için mikrofona erişiyoruz. Ses kaydedilmez ve cihazdan çıkmaz.</string>
 </dict>
 </plist>
